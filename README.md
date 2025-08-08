@@ -1,12 +1,43 @@
-# React + Vite
+# Redux-Saga API Integration Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + Vite project demonstrating Redux Toolkit and Redux-Saga for API integration.
 
-Currently, two official plugins are available:
+## 🔧 Tech Stack
+- **React** with **Vite**
+- **React Router DOM** for routing
+- npm install react-router-dom
+- **Redux Toolkit** for state management
+- **Redux-Saga** for handling asynchronous actions
+- npm install @reduxjs/toolkit react-redux redux-saga axios
+- **Framer Motion** for animations
+- npm install framer-motion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📁 Folder Structure  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+redux-saga-integration-demo/
+├── public/ # Static assets
+├── src/
+│ ├── components/ # Reusable UI components (forms, buttons, etc.)
+│ ├── pages/ # Application pages (e.g. Dashboard, Login)
+│ ├── redux/
+│ │ ├── actions/ # Redux action creators
+│ │ ├── reducers/ # Slice reducers
+│ │ ├── sagas/ # Redux-Saga generators (API calls & side effects)
+│ │ └── store.js # Configured Redux store with middleware
+│ ├── services/ # API services / HTTP request functions
+│ ├── styles/ # Global / shared CSS files
+│ ├── App.jsx # Main app component
+│ └── main.jsx # Entry point with router + Redux provider
+├── .gitignore
+├── package.json
+└── vite.config.js
+
+
+
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
